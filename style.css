@@ -25,6 +25,11 @@ h3 {
     padding-bottom: 1rem;
 }
 
+.build p {
+    color: hsl(192, 100%, 9%);
+    font-weight: 500;
+}
+
 p {
     font-family: 'Open Sans', sans-serif;
     color: hsl(208, 11%, 55%);
@@ -45,11 +50,16 @@ button {
     padding: 40px 60px;
 }
 
+.logo {
+    display: flex;
+    flex-direction: row;
+}
+
 .box {
     display: flex;
     align-items: center;
-	justify-content: space-between;
-	margin-bottom: 40px;
+    justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 .try-btn {
@@ -73,12 +83,16 @@ button {
     padding: 80px 50px;
 }
 
-.grow, .flow, .user {
+.grow,
+.flow,
+.user {
     box-shadow: 0 0 0 3px hsl(193, 100%, 96%);
     border-radius: 10px;
-    }
+}
 
-.grow, .flow, .user .notes {
+.grow,
+.flow,
+.user .notes {
     padding: 0 300px 0 100px;
 }
 
@@ -139,6 +153,19 @@ footer h5 {
     padding: 1rem 0;
 }
 
+.icon {
+    display: flex;
+}
+
+.icon i {
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.icon h5 {
+    padding-right: 50px;
+}
+
 .col-4 a {
     padding: 1rem 0.5rem 0;
 }
@@ -150,38 +177,134 @@ footer h5 {
 }
 
 @media screen and (max-width: 375px) {
+    h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    h3 {
+        font-size: 1rem;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .build p {
+        font-size: 1rem;
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    p {
+        font-size: 0.8rem;
+        text-align: center;
+        padding: 10px 30px;
+    }
+
+    button {
+        font-size: 0.6rem;
+    }
+
+    .head-section {
+        padding: 20px 20px;
+    }
+
+    .logo img {
+        width: 30%;
+    }
+
+    .head-section .logo {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 30px;
+    }
+
+    .try-btn {
+        padding: 5px 20px;
+    }
+
+    .start-btn {
+        margin: 10px 50px 30px;
+    }
+
     .box {
         flex-direction: column;
+        margin-bottom: 20px;
     }
+
+    .mid-section {
+        margin: 20px 10px 0;
+        padding: 30px 10px 50px;
+    }
+
+    .grow, .user {
+        flex-direction: column-reverse;
+        margin-bottom: 30px;
+    }
+
+    .flow {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .grow, .flow, .user .notes {
+        padding: 0 0 20px;
+        text-align: center;
+    }
+
+    .last-section {
+        width: 90%;
+        height: 100%;
+        margin-left: 5%;
+        margin-bottom: -15%;
+        display: inline-flex;
+    }
+
+    .ready-btn {
+        font-size: 0.8rem;
+        padding: 10px 40px;
+        margin: 0 10px 30px;
+    }
+
+    footer {
+        padding: 100px 20px 20px;
+    }
+
+    footer h5 {
+        padding: 0 0 20px;
+    }
+
+    .col-image img {
+        width: 50%;
+        padding-top: 30px;
+    }
+
+    footer .cols {
+        flex-direction: column;
+    }
+
+    .icon i {
+        padding-top: 5px;
+    }
+
+    .col-1 {
+        margin: 0 0 20px;
+    }
+
+    .col-4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .copy h5 {
+        font-size: 10px;
+    }
+
+    .copy {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }   
 }
-
-
-/* 
-	nav.flex {
-		flex-direction: row;
-	}
-
-	.header-img {
-		margin-top: 40px;
-		margin-left: 0;
-		width: 100%;
-	}
-
-	.flex {
-		flex-direction: column;
-	}
-
-	.box-reverse-mobile {
-		flex-direction: column-reverse;
-	}
-
-	footer ul {
-		padding: 0;
-		width: 100%;
-	}
-
-	footer p {
-		text-align: center;
-	}
-}
- */
